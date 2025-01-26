@@ -1,7 +1,8 @@
+import { NavLink } from "react-router-dom";
 
 
 const Gadget = ({ gadget }) => {
-    const {product_img, product_title, price } = gadget
+    const {product_id, product_img, product_title, price } = gadget
     return (
         <div>
             <div className="card bg-base-100 w-[400px] shadow-sm mt-10">
@@ -12,10 +13,12 @@ const Gadget = ({ gadget }) => {
                         className="rounded-xl h-40" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">{product_title}</h2>
-                    <p>Price: {price}k</p>
+                    <h2 className="card-title text-2xl">{product_title}</h2>
+                    <p className="text-xl text-gray-500">Price: {price}k</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <NavLink to={`productDetails/${product_id}`}>
+                            <button className="btn btn-outline btn-secondary rounded-3xl">Viw Details</button>
+                        </NavLink>
                     </div>
                 </div>
             </div>
