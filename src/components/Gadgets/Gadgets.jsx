@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Gadget from "../Gadget/Gadget";
+import './Gadgets.css'
 
 
 const Gadgets = () => {

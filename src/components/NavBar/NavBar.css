@@ -1,0 +1,4 @@
+li a.active {
+    color: rgb(149, 56, 226);;
+    text-decoration: underline;
+}

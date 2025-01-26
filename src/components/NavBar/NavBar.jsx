@@ -1,6 +1,7 @@
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { RiHeart3Line } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
+import './NavBar.css'
 
 const NavBar = () => {
     const links = <>

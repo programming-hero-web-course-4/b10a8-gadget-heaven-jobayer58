@@ -6,8 +6,8 @@
       "category": "samsung phone",
       "price": 79999,
       "description": "Flagship phone with excellent performance and design.",
-      "specification": ["8GB RAM", "128GB Storage", "Triple Camera"],
-      "available": true,
+      "specification": ["1. 8GB RAM", "2. 128GB Storage", "3. Triple Camera"],
+      "available": "In Stock",
       "rating": 4.7
     },
     {
@@ -18,7 +18,7 @@
       "price": 129999,
       "description": "Apple's flagship with A16 Bionic chip and stunning design.",
       "specification": ["6GB RAM", "128GB Storage", "Triple Camera"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.9
     },
     {
@@ -29,7 +29,7 @@
       "price": 35999,
       "description": "Affordable smartphone with solid performance.",
       "specification": ["6GB RAM", "128GB Storage", "Quad Camera"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.5
     },
     {
@@ -40,7 +40,7 @@
       "price": 72999,
       "description": "Powerful laptop with Intel Core i5 processor.",
       "specification": ["Intel i5", "8GB RAM", "512GB SSD"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.6
     },
     {
@@ -51,7 +51,7 @@
       "price": 49999,
       "description": "Compact iPhone with powerful performance.",
       "specification": ["4GB RAM", "64GB Storage", "Single Camera"],
-      "available": false,
+      "available": "Stock Out",
       "rating": 4.3
     },
     {
@@ -62,7 +62,7 @@
       "price": 45999,
       "description": "Advanced smartwatch with health tracking.",
       "specification": ["Heart Rate Monitor", "Sleep Tracking", "GPS"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.8
     },
     {
@@ -73,7 +73,7 @@
       "price": 25999,
       "description": "Stylish smartwatch with fitness tracking.",
       "specification": ["Blood Oxygen Monitor", "Fitness Tracking", "GPS"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.6
     },
     {
@@ -84,7 +84,7 @@
       "price": 64999,
       "description": "Sleek laptop with solid performance.",
       "specification": ["Intel i5", "8GB RAM", "256GB SSD"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.5
     },
     {
@@ -95,7 +95,7 @@
       "price": 14999,
       "description": "Budget-friendly smartphone for daily use.",
       "specification": ["4GB RAM", "64GB Storage", "Dual Camera"],
-      "available": false,
+      "available": "Stock Out",
       "rating": 4.2
     },
     {
@@ -106,7 +106,7 @@
       "price": 55999,
       "description": "Affordable laptop with great features.",
       "specification": ["AMD Ryzen 5", "8GB RAM", "512GB SSD"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.4
     },
     {
@@ -117,7 +117,7 @@
       "price": 109999,
       "description": "High-performance iPhone with great camera.",
       "specification": ["6GB RAM", "128GB Storage", "Dual Camera"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.8
     },
     {
@@ -128,7 +128,7 @@
       "price": 129999,
       "description": "Gaming laptop with advanced specs.",
       "specification": ["AMD Ryzen 9", "16GB RAM", "1TB SSD"],
-      "available": false,
+      "available": "Stock Out",
       "rating": 4.7
     },
     {
@@ -139,7 +139,7 @@
       "price": 19999,
       "description": "Smartwatch for fitness and health tracking.",
       "specification": ["Heart Rate Monitor", "Step Counter", "GPS"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.3
     },
     {
@@ -150,7 +150,7 @@
       "price": 124999,
       "description": "Stylish foldable smartphone.",
       "specification": ["8GB RAM", "256GB Storage", "Dual Camera"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.9
     },
     {
@@ -161,7 +161,7 @@
       "price": 30999,
       "description": "Smartwatch designed for runners.",
       "specification": ["VO2 Max", "GPS", "Heart Rate Monitor"],
-      "available": true,
+      "available": "In Stock",
       "rating": 4.5
     }
   ]
