@@ -1,9 +1,9 @@
-
+import errorImg from '../../../assets/images (1).jpeg'
 
 const ErrorPage = () => {
     return (
-        <div>
-            <h2 className="text-5xl text-center py-20">Sorry!! Page not Found</h2>
+        <div className='object-cover h-full w-1/2 mx-auto'>
+            <img className='h-full w-full object-cover' src={errorImg} alt="" />
         </div>
     );
 };

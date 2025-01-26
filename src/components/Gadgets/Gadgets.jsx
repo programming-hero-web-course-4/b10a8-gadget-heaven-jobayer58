@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Gadget from "../Gadget/Gadget";
 import './Gadgets.css'
+import noGadget from "../../../assets/No Available.jpeg"
 
 
 const Gadgets = () => {
@@ -38,8 +39,8 @@ const Gadgets = () => {
                         <Gadget key={gdg.product_id} gadget={gdg}></Gadget>
                     ))
                 ) : (
-                    <div className="text-5xl mt-10  font-bold">
-                        No Available This Product !! 
+                    <div className="text-5xl mt-10  font-bold h-[800px] w-[1260px] "> 
+                        <img className="h-full w-full object-cover" src={noGadget} alt="" />
                     </div>
                 )}
             </div>
