@@ -1,0 +1,168 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "Samsung Galaxy S23",
+      "product_img": "https://i.postimg.cc/T27mhxjS/samsung-s23.jpg",
+      "category": "phone",
+      "price": 79999,
+      "description": "Flagship phone with excellent performance and design.",
+      "specification": ["8GB RAM", "128GB Storage", "Triple Camera"],
+      "available": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 2,
+      "product_title": "iPhone 14 Pro",
+      "product_img": "https://i.postimg.cc/0NsKhyx6/download.jpg",
+      "category": "phone",
+      "price": 129999,
+      "description": "Apple's flagship with A16 Bionic chip and stunning design.",
+      "specification": ["6GB RAM", "128GB Storage", "Triple Camera"],
+      "available": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 3,
+      "product_title": "Samsung Galaxy A54",
+      "product_img": "https://i.postimg.cc/TY0sKnGx/download-1.jpg",
+      "category": "phone",
+      "price": 35999,
+      "description": "Affordable smartphone with solid performance.",
+      "specification": ["6GB RAM", "128GB Storage", "Quad Camera"],
+      "available": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 4,
+      "product_title": "HP Pavilion 15",
+      "product_img": "https://i.postimg.cc/QdVfVP0g/download-3.jpg",
+      "category": "laptop",
+      "price": 72999,
+      "description": "Powerful laptop with Intel Core i5 processor.",
+      "specification": ["Intel i5", "8GB RAM", "512GB SSD"],
+      "available": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 5,
+      "product_title": "iPhone SE 2023",
+      "product_img": "https://i.postimg.cc/7ZcmzVWF/download-4.jpg",
+      "category": "phone",
+      "price": 49999,
+      "description": "Compact iPhone with powerful performance.",
+      "specification": ["4GB RAM", "64GB Storage", "Single Camera"],
+      "available": false,
+      "rating": 4.3
+    },
+    {
+      "product_id": 6,
+      "product_title": "Apple Watch Series 8",
+      "product_img": "https://i.postimg.cc/xCGRWS1Q/download-5.jpg",
+      "category": "smart watch",
+      "price": 45999,
+      "description": "Advanced smartwatch with health tracking.",
+      "specification": ["Heart Rate Monitor", "Sleep Tracking", "GPS"],
+      "available": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 7,
+      "product_title": "Samsung Galaxy Watch 5",
+      "product_img": "https://i.postimg.cc/VvYRwHJC/download-6.jpg",
+      "category": "smart watch",
+      "price": 25999,
+      "description": "Stylish smartwatch with fitness tracking.",
+      "specification": ["Blood Oxygen Monitor", "Fitness Tracking", "GPS"],
+      "available": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 8,
+      "product_title": "Dell Inspiron 14",
+      "product_img": "https://i.postimg.cc/593gg1rq/download-7.jpg",
+      "category": "laptop",
+      "price": 64999,
+      "description": "Sleek laptop with solid performance.",
+      "specification": ["Intel i5", "8GB RAM", "256GB SSD"],
+      "available": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 9,
+      "product_title": "Samsung Galaxy M14",
+      "product_img": "https://i.postimg.cc/4N25CPsY/download-9.jpg",
+      "category": "phone",
+      "price": 14999,
+      "description": "Budget-friendly smartphone for daily use.",
+      "specification": ["4GB RAM", "64GB Storage", "Dual Camera"],
+      "available": false,
+      "rating": 4.2
+    },
+    {
+      "product_id": 10,
+      "product_title": "Lenovo IdeaPad Slim 3",
+      "product_img": "https://i.postimg.cc/mgcST9g8/download-10.jpg",
+      "category": "laptop",
+      "price": 55999,
+      "description": "Affordable laptop with great features.",
+      "specification": ["AMD Ryzen 5", "8GB RAM", "512GB SSD"],
+      "available": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": 11,
+      "product_title": "iPhone 13",
+      "product_img": "https://i.postimg.cc/8zqmcCFD/download-11.jpg",
+      "category": "phone",
+      "price": 109999,
+      "description": "High-performance iPhone with great camera.",
+      "specification": ["6GB RAM", "128GB Storage", "Dual Camera"],
+      "available": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 12,
+      "product_title": "Asus ROG Zephyrus G14",
+      "product_img": "https://i.postimg.cc/TwxjjHq4/download-12.jpg",
+      "category": "laptop",
+      "price": 129999,
+      "description": "Gaming laptop with advanced specs.",
+      "specification": ["AMD Ryzen 9", "16GB RAM", "1TB SSD"],
+      "available": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": 13,
+      "product_title": "Fitbit Versa 4",
+      "product_img": "https://i.postimg.cc/BbYx0ZWr/download-13.jpg",
+      "category": "smart watch",
+      "price": 19999,
+      "description": "Smartwatch for fitness and health tracking.",
+      "specification": ["Heart Rate Monitor", "Step Counter", "GPS"],
+      "available": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": 14,
+      "product_title": "Samsung Galaxy Z Flip 5",
+      "product_img": "https://i.postimg.cc/dQ4Rd675/download-14.jpg",
+      "category": "phone",
+      "price": 124999,
+      "description": "Stylish foldable smartphone.",
+      "specification": ["8GB RAM", "256GB Storage", "Dual Camera"],
+      "available": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 15,
+      "product_title": "Garmin Forerunner 255",
+      "product_img": "https://i.postimg.cc/hPvL0mTc/download-15.jpg",
+      "category": "smart watch",
+      "price": 30999,
+      "description": "Smartwatch designed for runners.",
+      "specification": ["VO2 Max", "GPS", "Heart Rate Monitor"],
+      "available": true,
+      "rating": 4.5
+    }
+  ]
+  
