@@ -1,3 +1,5 @@
+import { toast } from "react-toastify"
+
 const getStoreCartList = () => {
     const storedListStr = localStorage.getItem('cart-list')
     if (storedListStr) {
@@ -19,6 +21,8 @@ const addToStoreCartList = (id) => {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList)
         localStorage.setItem('cart-list',storedListStr)
+
+        toast('Item added to Cart List')
     }
 }
 
@@ -43,6 +47,8 @@ const addToStoreWishList = (id) => {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList)
         localStorage.setItem('wish-list',storedListStr)
+
+        toast('Item added to Wish list')
     }
 }
 
