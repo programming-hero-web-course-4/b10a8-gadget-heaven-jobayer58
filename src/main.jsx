@@ -13,6 +13,8 @@ import Home from './components/Home/Home';
 import Statistic from './components/Statistic/Statistic';
 import Dashboard from './components/Dashboard/Dashboard';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import Cart from './components/Cart/Cart';
+import Wishlist from './components/Wishlist/Wishlist';
 
 const router = createBrowserRouter([
   {
@@ -30,13 +32,26 @@ const router = createBrowserRouter([
       },
       {
         path: 'dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: 'cart',
+            element: <Cart></Cart>,
+            loader: () => fetch('/gadgetData.json')
+          },
+          {
+            path: 'wishList',
+            element: <Wishlist></Wishlist>,
+            loader: () => fetch('/gadgetData.json')
+          }
+        ]
       },
       {
         path: 'productDetails/:product_id',
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch('/gadgetData.json')
-      }
+      },
+      
     ]
     
   },

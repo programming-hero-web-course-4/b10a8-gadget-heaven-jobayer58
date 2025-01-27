@@ -12,15 +12,16 @@
     },
     {
       "product_id": 2,
-      "product_title": "iPhone 14 Pro",
-      "product_img": "https://i.postimg.cc/0NsKhyx6/download.jpg",
+      "product_title": "iPhone 13",
+      "product_img": "https://i.postimg.cc/8zqmcCFD/download-11.jpg",
       "category": "iphone phone",
-      "price": 129999,
-      "description": "Apple's flagship with A16 Bionic chip and stunning design.",
-      "specification": ["6GB RAM", "128GB Storage", "Triple Camera"],
+      "price": 109999,
+      "description": "High-performance iPhone with great camera.",
+      "specification": ["6GB RAM", "128GB Storage", "Dual Camera"],
       "available": "In Stock",
-      "rating": 4.9
-    },
+      "rating": 4.8
+    }
+    ,
     {
       "product_id": 3,
       "product_title": "Samsung Galaxy A54",
@@ -111,14 +112,14 @@
     },
     {
       "product_id": 11,
-      "product_title": "iPhone 13",
-      "product_img": "https://i.postimg.cc/8zqmcCFD/download-11.jpg",
+      "product_title": "iPhone 14 Pro",
+      "product_img": "https://i.postimg.cc/0NsKhyx6/download.jpg",
       "category": "iphone phone",
-      "price": 109999,
-      "description": "High-performance iPhone with great camera.",
-      "specification": ["6GB RAM", "128GB Storage", "Dual Camera"],
+      "price": 129999,
+      "description": "Apple's flagship with A16 Bionic chip and stunning design.",
+      "specification": ["6GB RAM", "128GB Storage", "Triple Camera"],
       "available": "In Stock",
-      "rating": 4.8
+      "rating": 4.9
     },
     {
       "product_id": 12,
@@ -165,4 +166,6 @@
       "rating": 4.5
     }
   ]
+
+  
   

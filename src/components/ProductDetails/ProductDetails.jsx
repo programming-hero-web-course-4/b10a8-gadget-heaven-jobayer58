@@ -1,7 +1,8 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import { FcRating } from "react-icons/fc";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
+import { addToStoreCartList, addToStoreWishList } from "../../utility/addToDB";
 
 const ProductDetails = () => {
 
@@ -13,6 +14,14 @@ const ProductDetails = () => {
 
     const { product_img, product_title, price, specification, available, rating, description } = gadget
 
+    const handleAddCart = (id) => {
+
+        addToStoreCartList(id)
+    }
+    const handleWishCart = (id) => {
+
+        addToStoreWishList(id)
+    }
 
     return (
         <div>
@@ -49,13 +58,15 @@ const ProductDetails = () => {
                         </div>
                         {/* btn */}
                         <div className="flex items-center gap-5">
-                            <button className="flex btn bg-[#9538E2] py-7 px-7 rounded-4xl">
+                            <NavLink >
+                            <button onClick={() => handleAddCart (product_id)} className="flex btn bg-[#9538E2] py-7 px-7 rounded-4xl">
                                 <h2 className=" text-xl text-white px-2">Add To Cart</h2>
                                 <p className="text-white">
                                     <MdOutlineLocalGroceryStore className="text-2xl " />
                                 </p>
                             </button>
-                            <button className="border btn border-gray-300 rounded-full h-14 w-14 items-center justify-center text-center flex">
+                            </NavLink>
+                            <button onClick={() => handleWishCart (product_id)} className="border btn border-gray-300 rounded-full h-14 w-14 items-center justify-center text-center flex">
                                 <p>
                                     <CiHeart className="text-3xl items-center justify-center text-center flex" />
                                 </p>
