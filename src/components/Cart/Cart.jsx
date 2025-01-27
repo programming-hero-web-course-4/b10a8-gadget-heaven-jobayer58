@@ -33,7 +33,9 @@ const Cart = () => {
                     <button className="btn bg-[#9538E2] text-white rounded-3xl text-xl py-6 px-8">Purchase</button>
                 </div>
             </div>
-
+            <div className="mt-5">
+                <p className="text-2xl font-bold">My Total Added Cart: {gadgetList.length}</p>
+            </div>
             <div className="space-y-8">
                 {
                     gadgetList.map((gadget, idx) => <CartDetails key={idx} gadget={gadget}></CartDetails>)

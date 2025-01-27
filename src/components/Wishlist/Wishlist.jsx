@@ -28,10 +28,12 @@ const Wishlist = () => {
             <div >
                 <h2 className="text-3xl font-bold">WishList</h2>
             </div>
-
+            <div className="mt-5">
+                <p className="text-2xl font-bold">My Total Wish: {wishList.length}</p>
+            </div>
             <div>
                 {
-                    wishList.map((gdg,idx) => <WishItem key={idx} wish={gdg}></WishItem>)
+                    wishList.map((gdg, idx) => <WishItem key={idx} wish={gdg}></WishItem>)
                 }
             </div>
         </div>

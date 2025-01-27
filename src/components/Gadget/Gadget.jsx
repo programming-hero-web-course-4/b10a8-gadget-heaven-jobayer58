@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
 const Gadget = ({ gadget }) => {
@@ -26,5 +27,9 @@ const Gadget = ({ gadget }) => {
     );
 };
 
+Gadget.propTypes = {
+    gadget: PropTypes
+
+}
 
 export default Gadget;

@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const WishItem = ({wish}) => {
     const {price,description,product_title,product_img} = wish
@@ -20,5 +20,9 @@ const WishItem = ({wish}) => {
         </div>
     );
 };
+
+WishItem.propTypes = {
+    wish: PropTypes
+}
 
 export default WishItem;

@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const CartDetails = ({ gadget }) => {
     const { product_img,product_title,price,description } = gadget
@@ -21,4 +21,7 @@ const CartDetails = ({ gadget }) => {
     );
 };
 
+CartDetails.propTypes = {
+    gadget: PropTypes
+}
 export default CartDetails;
