@@ -10,12 +10,12 @@ const Cart = () => {
     const allGadget = useLoaderData()
 
     const [sort, setSort] = useState('')
+    const [totalPrice, setTotalPrice]= useState(0)
 
 
 
     useEffect(() => {
         const storedCartList = getStoreCartList()
-
         const storedCartListInt = storedCartList.map(id => parseInt(id))
 
 
@@ -23,7 +23,12 @@ const Cart = () => {
 
         setGadgetList(gadgetListItem)
 
-    }, [])
+    }, [allGadget])
+
+    useEffect(() => {
+        const thisTotalPriceIS = gadgetList.reduce((sum,gadget) => sum + gadget.price, 0)
+        setTotalPrice(thisTotalPriceIS)
+    },[gadgetList])
 
     const handleSort = sortType => {
         setSort(sortType)
@@ -39,7 +44,7 @@ const Cart = () => {
             <div className="flex justify-between">
                 <div><h1 className="text-3xl font-bold">Cart </h1></div>
                 <div className="flex gap-5 justify-center items-center">
-                    <h1 className="text-3xl font-bold">Total Price:</h1>
+                    <h1 className="text-3xl font-bold">Total Price:  {totalPrice}</h1>
                     <button onClick={() => handleSort('price')} className="btn border-[#9538E2] text-[#9538E2] rounded-3xl text-xl py-6 px-8">Sort By Price</button>
                     <button className="btn bg-[#9538E2] text-white rounded-3xl text-xl py-6 px-8">Purchase</button>
                 </div>

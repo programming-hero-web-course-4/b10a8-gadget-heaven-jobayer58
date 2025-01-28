@@ -16,6 +16,7 @@ import ProductDetails from './components/ProductDetails/ProductDetails';
 import Cart from './components/Cart/Cart';
 import Wishlist from './components/Wishlist/Wishlist';
 import { ToastContainer } from 'react-toastify';
+import About from './components/About/About';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
         ]
       },
       {
+        path:'about',
+        element: <About></About>
+      },
+      {
         path: 'productDetails/:product_id',
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch('/gadgetData.json')
@@ -57,6 +62,7 @@ const router = createBrowserRouter([
     
   },
 ]);
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

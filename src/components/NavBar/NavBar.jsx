@@ -8,6 +8,7 @@ const NavBar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to='statistic'>statistics</NavLink></li>
         <li><NavLink to='dashboard'>Dashboard</NavLink></li>
+        <li><NavLink to='about'>About</NavLink></li>
     </>
 
     return (
@@ -45,10 +46,16 @@ const NavBar = () => {
                 <div className="navbar-end gap-5">
                     <div className=" bg-white  rounded-full h-12 w-12 items-center justify-center text-center flex">
                         <MdOutlineLocalGroceryStore className="text-2xl " />
+                        {/* <span className="absolute top-8 bg-white text-black text-sm rounded-full h-4 w-5 flex items-center justify-center">
+                            
+                        </span> */}
                     </div>
                     <div className="bg-white rounded-full h-12 w-12 items-center justify-center text-center flex">
 
                         <RiHeart3Line className="text-2xl items-center justify-center text-center flex" />
+                        {/* <span className="absolute top-8 bg-white text-black text-sm rounded-full h-5 w-5 flex items-center justify-center">
+                            
+                        </span> */}
                     </div>
 
                 </div>

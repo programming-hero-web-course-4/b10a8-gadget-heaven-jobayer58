@@ -13,7 +13,7 @@ const getStoreCartList = () => {
 }
 
 const addToStoreCartList = (id) => {
-    const storedList = getStoreCartList()
+    const storedList = getStoreCartList(true)
     if (storedList.includes(id)) {
         console.log(id, 'alReady exist')
     }
