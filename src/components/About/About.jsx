@@ -5,19 +5,19 @@ import mental from '../../../assets/elon_mask.jpeg'
 const About = () => {
     return (
         <div>
-            <div className="bg-[#9538E2] h-72 text-center text-white">
+            <div className="bg-[#9538E2] md:h-72 text-center text-white">
                 <h1 className="text-4xl  font-bold pt-10">About Us</h1>
-                <p className="text-gray-50 py-8 text-xl">Welcome to Gadget Haven, your one-stop shop for the latest gadgets and tech accessories. <br /> Our goal is to provide innovative devices that simplify and enhance your life. <br /> Whether your a tech lover  or just upgrading your essentials, <br /> we’re here to help you stay ahead in the world of technology.</p>
+                <p className="text-gray-50 md:mx-0 mx-3 py-8 text-xl">Welcome to Gadget Haven, your one-stop shop for the latest gadgets and tech accessories. <span className='hidden lg:inline'><br /></span> Our goal is to provide innovative devices that simplify and enhance your life. <span className='hidden lg:inline'><br /></span> Whether your a tech lover  or just upgrading your essentials, <span className='hidden lg:inline'><br /></span> we’re here to help you stay ahead in the world of technology.</p>
             </div>
             <div className="w-10/12 mx-auto mt-16">
-                <h1 className="text-5xl font-bold text-center">Special person of Gadget Heaven</h1>
-                <div className='mt-16 md:flex justify-around'>
+                <h1 className="md:text-5xl text-3xl font-bold text-center">Special person of Gadget Heaven</h1>
+                <div className='mt-16 md:flex justify-around space-y-10 md:space-y-0'>
                     {/* card-1 */}
-                    <div className="card bg-base-100 w-96 shadow-xl">
+                    <div className="card bg-base-100 md:w-96 shadow-xl">
                         <figure className=" pt-10">
                             <img
                                 src={ceo}
-                                className="rounded-xl h-66 w-76 object-cover" />
+                                className="rounded-xl md:h-66 md:w-76 h-56 w-56 object-cover" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title text-2xl">Steve Jobs</h2>
@@ -29,11 +29,11 @@ const About = () => {
                         </div>
                     </div>
                     {/* card-2 */}
-                    <div className="card bg-base-100 w-96 shadow-xl">
+                    <div className="card bg-base-100 md:w-96 shadow-xl">
                         <figure className=" pt-10">
                             <img
                                 src={mental}
-                                className="rounded-xl h-66 w-76 object-cover" />
+                                className="rounded-xl md:h-66 md:w-76 h-56 w-56 object-cover" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title text-2xl">Elon Musk</h2>
@@ -45,11 +45,11 @@ const About = () => {
                         </div>
                     </div>
                     {/* card-3 */}
-                    <div className="card bg-base-100 w-96 shadow-xl">
+                    <div className="card bg-base-100 md:w-96 shadow-xl">
                         <figure className=" pt-10">
                             <img
                                 src={mark}
-                                className="rounded-xl h-66 w-76 object-cover" />
+                                className="rounded-xl md:h-66 md:w-76 h-56 w-56 object-cover" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title text-2xl">mark zuckerberg</h2>

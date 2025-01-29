@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path:'statistic',
+        path: 'statistic',
         element: <Statistic></Statistic>
       },
       {
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
         ]
       },
       {
-        path:'about',
+        path: 'about',
         element: <About></About>
       },
       {
@@ -59,9 +59,9 @@ const router = createBrowserRouter([
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch('/gadgetData.json')
       },
-      
+
     ]
-    
+
   },
 ]);
 
@@ -74,8 +74,8 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CountProvider>
-    <RouterProvider router={router} />
-    <ToastContainer />
+      <RouterProvider router={router} />
+      <ToastContainer />
     </CountProvider>
   </StrictMode>,
 )

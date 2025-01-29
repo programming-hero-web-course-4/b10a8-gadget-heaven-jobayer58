@@ -53,13 +53,13 @@ const Cart = () => {
 
     return (
         <div className="w-8/10 mx-auto mt-16">
-            <div className="flex justify-between">
-                <div><h1 className="text-3xl font-bold">Cart </h1></div>
-                <div className="flex gap-5 justify-center items-center">
-                    <h1 className="text-3xl font-bold">Total Price:  {totalPrice}</h1>
-                    <button onClick={() => handleSort('price')} className="btn border-[#9538E2] text-[#9538E2] rounded-3xl text-xl py-6 px-8">Sort By Price</button>
+            <div className="md:flex justify-between ">
+                <div className="text-center"><h1 className="text-3xl font-bold">Cart </h1></div>
+                <div className="grid md:grid-cols-3 md:gap-5 mt-5 md:mt-0 gap-2 justify-center items-center ">
+                    <div ><h1 className="md:text-3xl text-2xl font-bold">Total Price:  {totalPrice}</h1></div>
+                    <button onClick={() => handleSort('price')} className="btn border-[#9538E2] text-[#9538E2] rounded-3xl text-xl md:py-6 md:px-8">Sort By Price</button>
                     {/* Open the modal using document.getElementById('ID').showModal() method */}
-                    <button className="btn bg-[#9538E2] text-white rounded-3xl  text-xl py-6 px-8" onClick={() => document.getElementById('my_modal_1').showModal()}>Purchase</button>
+                    <button className="btn bg-[#9538E2] text-white rounded-3xl  text-xl md:py-6 md:px-8" onClick={() => document.getElementById('my_modal_1').showModal()}>Purchase</button>
                     <dialog id="my_modal_1" className="modal text-center ">
                         <div className="modal-box justify-center text-center items-center flex-col space-y-4 ">
                             <img className="font-bold mx-auto text-lg" src={modal} alt="" />
@@ -79,7 +79,7 @@ const Cart = () => {
                 </div>
             </div>
             <div className="mt-5">
-                <p className="text-2xl font-bold">My Total Added Cart: {gadgetList.length}</p>
+                <p className="md:text-2xl text-2xl md:text-start text-center font-bold">My Total Added Cart: {gadgetList.length}</p>
             </div>
             <div className="space-y-8">
                 {

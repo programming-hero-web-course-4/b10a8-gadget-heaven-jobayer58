@@ -39,7 +39,7 @@ const ProductDetails = () => {
             sumHart(0)
             setClickedHart(true)
         }else(
-            alert('all Ready this cart is added your cart list')
+            alert('Your Favorite product is all ready added your Wish list')
         )
     
     }

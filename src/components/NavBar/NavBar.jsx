@@ -28,7 +28,7 @@ const NavBar = () => {
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
+                                className="h-7 w-7 "
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -45,14 +45,14 @@ const NavBar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-3xl ">Gadget Heaven</a>
+                    <a className="btn btn-ghost font-bold md:text-4xl text-center text-xl ">Gadget Heaven</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-6 text-xl">                     
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end gap-5">
+                <div className="navbar-end md:gap-5 gap-3">
                     <div className=" bg-white  rounded-full h-12 w-12 items-center justify-center text-center flex">
                         <MdOutlineLocalGroceryStore className="text-2xl " />
                         <span className="absolute top-8 bg-white text-black text-sm rounded-full h-4 w-5 flex items-center justify-center">
