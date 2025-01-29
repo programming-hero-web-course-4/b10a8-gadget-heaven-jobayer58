@@ -17,6 +17,8 @@ import Cart from './components/Cart/Cart';
 import Wishlist from './components/Wishlist/Wishlist';
 import { ToastContainer } from 'react-toastify';
 import About from './components/About/About';
+import { CountProvider } from './utility/context';
+
 
 const router = createBrowserRouter([
   {
@@ -64,9 +66,16 @@ const router = createBrowserRouter([
 ]);
 
 
+
+
+
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <CountProvider>
     <RouterProvider router={router} />
     <ToastContainer />
+    </CountProvider>
   </StrictMode>,
 )

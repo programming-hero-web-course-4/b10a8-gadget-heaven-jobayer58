@@ -5,11 +5,19 @@ const getStoreCartList = () => {
     if (storedListStr) {
         const storedList = JSON.parse(storedListStr)
         return storedList
-    }else{
+    } else {
         return []
     }
-    
 
+
+}
+
+export const clearStorageCart = () => {
+    localStorage.removeItem('cart-list')
+}
+
+export const clearStorageWish = () => {
+    localStorage.removeItem('wish-list')
 }
 
 const addToStoreCartList = (id) => {
@@ -17,10 +25,10 @@ const addToStoreCartList = (id) => {
     if (storedList.includes(id)) {
         console.log(id, 'alReady exist')
     }
-    else{
+    else {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList)
-        localStorage.setItem('cart-list',storedListStr)
+        localStorage.setItem('cart-list', storedListStr)
 
         toast('Item added to Cart List')
     }
@@ -31,10 +39,10 @@ const getStoreWishList = () => {
     if (storedListStr) {
         const storedList = JSON.parse(storedListStr)
         return storedList
-    }else{
+    } else {
         return []
     }
-    
+
 
 }
 
@@ -43,10 +51,10 @@ const addToStoreWishList = (id) => {
     if (storedList.includes(id)) {
         console.log(id, 'alReady exist')
     }
-    else{
+    else {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList)
-        localStorage.setItem('wish-list',storedListStr)
+        localStorage.setItem('wish-list', storedListStr)
 
         toast('Item added to Wish list')
     }
@@ -55,4 +63,4 @@ const addToStoreWishList = (id) => {
 
 
 
-export {addToStoreCartList, getStoreCartList, addToStoreWishList,getStoreWishList}
+export { addToStoreCartList, getStoreCartList, addToStoreWishList, getStoreWishList }

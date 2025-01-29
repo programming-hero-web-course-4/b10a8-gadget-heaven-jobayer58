@@ -1,6 +1,5 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Navigate, NavLink, Outlet } from "react-router-dom";
 import './Dashboard.css'
-
 
 const Dashboard = () => {
     return (
@@ -25,7 +24,7 @@ const Dashboard = () => {
             {/*  */}
             <div>
                 <Outlet></Outlet>
-
+                <Navigate to='cart' replace={true}></Navigate>
             </div>
 
         </div>

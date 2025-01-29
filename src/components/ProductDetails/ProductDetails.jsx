@@ -3,6 +3,8 @@ import { FcRating } from "react-icons/fc";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { addToStoreCartList, addToStoreWishList } from "../../utility/addToDB";
+import { useContext, useState } from "react";
+import { CountContext } from "../../utility/context";
 
 const ProductDetails = () => {
 
@@ -14,13 +16,32 @@ const ProductDetails = () => {
 
     const { product_img, product_title, price, specification, available, rating, description } = gadget
 
+    const { sumCart } = useContext(CountContext)
+    const [clicked , setClicked] = useState(false)
+
     const handleAddCart = (id) => {
-
-        addToStoreCartList(id)
+        if (!clicked) {
+            addToStoreCartList(id)
+            sumCart(0)
+            setClicked(true)
+        }else{
+            alert ('all Ready this cart is added your cart list')
+        }
     }
-    const handleWishCart = (id) => {
 
-        addToStoreWishList(id)
+
+    const {sumHart} = useContext(CountContext)
+    const [clickedHart,setClickedHart] = useState(false)
+
+    const handleWishCart = (id) => {
+        if (!clickedHart) {
+            addToStoreWishList(id)
+            sumHart(0)
+            setClickedHart(true)
+        }else(
+            alert('all Ready this cart is added your cart list')
+        )
+    
     }
 
     return (
@@ -59,14 +80,14 @@ const ProductDetails = () => {
                         {/* btn */}
                         <div className="flex items-center gap-5">
                             <NavLink >
-                            <button onClick={() => handleAddCart (product_id)} className="flex btn bg-[#9538E2] py-7 px-7 rounded-4xl">
-                                <h2 className=" text-xl text-white px-2">Add To Cart</h2>
-                                <p className="text-white">
-                                    <MdOutlineLocalGroceryStore className="text-2xl " />
-                                </p>
-                            </button>
+                                <button onClick={() => handleAddCart(product_id)} className="flex btn bg-[#9538E2] py-7 px-7 rounded-4xl">
+                                    <h2 className=" text-xl text-white px-2">Add To Cart</h2>
+                                    <p className="text-white">
+                                        <MdOutlineLocalGroceryStore className="text-2xl " />
+                                    </p>
+                                </button>
                             </NavLink>
-                            <button onClick={() => handleWishCart (product_id)} className="border btn border-gray-300 rounded-full h-14 w-14 items-center justify-center text-center flex">
+                            <button onClick={() => handleWishCart(product_id)} className="border btn border-gray-300 rounded-full h-14 w-14 items-center justify-center text-center flex">
                                 <p>
                                     <CiHeart className="text-3xl items-center justify-center text-center flex" />
                                 </p>
