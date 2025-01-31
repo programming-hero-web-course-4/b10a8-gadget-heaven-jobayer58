@@ -52,7 +52,7 @@ const Cart = () => {
     }
 
     return (
-        <div className="w-8/10 mx-auto mt-16">
+        <div className="md:w-8/10 md:mx-auto mx-3 mt-16">
             <div className="md:flex justify-between ">
                 <div className="text-center"><h1 className="text-3xl font-bold">Cart </h1></div>
                 <div className="grid md:grid-cols-3 md:gap-5 mt-5 md:mt-0 gap-2 justify-center items-center ">

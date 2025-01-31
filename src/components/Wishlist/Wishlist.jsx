@@ -33,13 +33,13 @@ const Wishlist = () => {
     }
 
     return (
-        <div className="w-8/10 mx-auto mt-16">
+        <div className="md:w-8/10 mx-4 md:mx-auto mt-16">
             <div >
-                <h2 className="text-3xl font-bold">WishList</h2>
+                <h2 className="text-3xl text-center md:text-start font-bold">WishList</h2>
             </div>
-            <div className="mt-5 flex justify-between">
-                <p className="text-2xl font-bold">My Total Wish: {wishList.length}</p>
-                <p onClick={clearWishList} className="btn bg-[#9538E2] text-white rounded-3xl  text-xl py-6 px-8">Clear Wish List</p>
+            <div className="mt-5 flex items-center justify-between">
+                <p className="md:text-2xl font-bold">My Total Wish: {wishList.length}</p>
+                <p onClick={clearWishList} className="btn bg-[#9538E2] text-white rounded-3xl  md:text-xl md:py-6 md:px-8">Clear Wish List</p>
             </div>
             <div>
                 {
